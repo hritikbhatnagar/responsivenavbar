@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/03c9b2c9ea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="p31.css">
+</head>
+<body>
+<nav class="bg-red-400 flex justify-between ">
+    <div class="box1 m-2">
+        <img class="size-10" src="https://img.freepik.com/free-photo/nature-tranquil-beauty-reflected-calm-water-generative-ai_188544-12798.jpg?w=1060&t=st=1714152274~exp=1714152874~hmac=a5f52a4b931f153f9e7cbc51aeaa8994321b10c0cdb17800940310b838651290"/>
+        </div>
+    <div class="box2   justify-center m-3 hidden sm:block">
+        <ul class="flex gap-4 ">
+        <li>Home</li>
+        <li>Gallery</li>
+        <li>Our Work</li>
+        <li>Career</li>
+        <li>Blog</li>
+    </ul>
+</div>
+<div class="box3 flex justify-center m-3  w-[50px] items-center sm:hidden">
+    <i class="fa-solid fa-bars"></i>
+</div>
+
+</nav>
+<div class="box4 bg-black hidden">
+    <ul class="flex text-yellow-300 font-medium flex-col text-center gap-4 cursor-pointer ">
+        <li class="hover:underline decoration-green-400 cursor-pointer">Home</li>
+        <li class="hover:underline decoration-green-400 cursor-pointer">Gallery</li>
+        <li class="hover:underline decoration-green-400 cursor-pointer">Our Work</li>
+        <li class="hover:underline decoration-green-400 cursor-pointer">Career</li>
+        <li class="hover:underline decoration-green-400 cursor-pointer">Blog</li>
+    </ul>
+</div>
+
+<script>
+    $(document).ready(function(){
+  $("i").click(function(){
+    $(".box4").slideToggle(1000);
+  });
+});
+</script>
+</body>
+</html>
